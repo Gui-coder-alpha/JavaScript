@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horário Atual</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
     <script refer src="Contagem.js"></script>
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h1>Vamos contar</h1>
+        <h1>Tabuada</h1>
     </header>
     <section id="quadrado1">
         <div id="dados">
-            <p>Início: <input type="number" name="inicio" id="Início"></p>
-            <p>Fim: <input type="number" name="fim" id="Fim"></p>
-            <p>Passo: <input type="number" name="passo" id="Passo"></p>
-            <input value="Contar" onclick="contar()" type="button" name="resultado" id="Resultado">
+            <p>Número: <input type="number" name="numero" id="Número"> <input type="button" name="gerar" id="Tabuada" value="Gerar" onclick="tabuada()"></p>
         </div>
         <div id="resultado">
-            Preparando a contagem
+            <select name="tabuada" id="Valor" size="10">
+                <option value="">Digite um número acima</option>
+            </select>
         </div>
 
     <footer>
