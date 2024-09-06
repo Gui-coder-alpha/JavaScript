@@ -40,7 +40,7 @@ function verificar() {
                 img.setAttribute('src', 'adulto mulher.jpg')
             } else {
                 //velho
-                img.setAttribute('src', 'velho mulher.jpg')
+                img.setAttribute('src', 'velha mulher.jpg')
             }
         }
         res.innerHTML = `É um ${sexo}! E tem ${idade} anos`
