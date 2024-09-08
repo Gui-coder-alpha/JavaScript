@@ -26,9 +26,6 @@ function calcular() {
 
 
 
-
-
-
 /*if (km > 100)  {
     console.log(`Você foi multado por andar a ${km}!`)
 } else {

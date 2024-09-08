@@ -3,12 +3,10 @@ let add = document.getElementById('adicionar')
 let lista = document.getElementById('lista')
 let res = document.getElementById('resultado')
 let valores = []
+let fim = document.getElementById('final')
 
 function coloque() {
-    if (num >= 1 && num < 100){
-        valores.push(Number(num))
-        valores = 
-        add.innerHTML= `Valor ${num} adicionado`
-    }
-
+    inum = Number(num.value)
+    valores.push(inum)
+    lista.innerHTML(`aqui ${valores}`)
 }
