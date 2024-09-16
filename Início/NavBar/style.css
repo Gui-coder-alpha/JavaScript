@@ -62,7 +62,7 @@ li {
 }
 
 
-@media (max-width: 750px) {
+@media screen and (max-width: 750px) {
     .hamburgue {
         display: block;
         z-index: 1;
