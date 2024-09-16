@@ -69,8 +69,14 @@ li {
         position: absolute;
     }
 
+    header {
+        background-attachment: fixed;
+        margin:0px auto 0px auto ;
+    }
+
     #background {
         background-attachment: fixed;
+        margin: 0px auto auto 0px;
     }
 
     .lista a {
