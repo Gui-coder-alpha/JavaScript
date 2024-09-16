@@ -69,6 +69,10 @@ li {
         position: absolute;
     }
 
+    #background {
+        background-attachment: fixed;
+    }
+
     .lista a {
         font-size: 2em;
     }
@@ -94,7 +98,7 @@ li {
     /*Ativando agora */
 
     .sim.active .lista {
-        clip-path: circle(3000px at 100% -100%);
+        clip-path: circle(1500px at 100% -100%);
         pointer-events: all;
     }
 }
