@@ -1,0 +1,99 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #eed8b0;
+}
+
+header {
+    background: linear-gradient(45deg ,#2C3F59, #A66641);
+    width: auto;
+    height: 16vh;
+    color: #eed8b0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cabeca {
+    font-size: 3em;
+}
+
+.hamburgue {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid white;
+    cursor: pointer;
+    margin: auto;
+    z-index: 1;
+}
+
+.hamburgue::before,
+.hamburgue::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin-top: 5px;
+}
+
+.lista {
+    display: flex;
+    font-size: 2em;
+}
+
+li {
+    list-style: none;
+    margin: 0px 45px 0px 0px;
+}
+
+#background {
+    background-image: url(wp5202251.png);
+    width: auto;
+    height: 84vh;
+    background-repeat: no-repeat;
+    background-size: 1600px;
+    background-position: center center;
+}
+
+
+@media (max-width: 750px) {
+    .hamburgue {
+        display: block;
+        z-index: 1;
+    }
+
+    .lista a {
+        font-size: 2em;
+    }
+
+    .lista {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(45deg, #2C3F59, #A66641);
+
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 0;
+
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        pointer-events: none;
+    }
+
+    /*Ativando agora */
+
+    .sim.active .lista {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+}
