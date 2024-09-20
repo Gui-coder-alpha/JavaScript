@@ -1,6 +1,7 @@
 let num = document.getElementById('numero')
 let list = document.getElementById('lista')
 let valores = []
+let res = document.getElementById('resultado')
 
 function colocar() {
     if (num.value > 0 && num.value <= 100) {
@@ -11,8 +12,17 @@ function colocar() {
         list.appendChild(tab)               // Cria um filho, sendo o option, o pai é o select, chamado de list, ou lista
         console.log(valores)        //Teste para verificar se está armazenando todos os valores necessário
     } else {
-        window.alert('Error')   //Não cumpriu nenhuma característica, erro.
+        window.alert('[Error]Coloque número válido[Error]')   //Não cumpriu nenhuma característica, erro.
     }
+}
+
+function fazer() {
+    console.log(valores.length)
+    let texto = document.createElement('p')
+    texto.innerHTML = `Você digitou ${valores.length} números, o maior foi ${valores}`
+    res.appendChild(texto)
+    for (contador = '' ; valores )
+
 }
 
 

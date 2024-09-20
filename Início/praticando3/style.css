@@ -22,6 +22,7 @@ h1 {
     margin: 20px auto auto auto;
     border-radius: 8px;
     box-shadow: 5px 5px 4px black;
+    overflow: auto;
 }
 
 #dados {
