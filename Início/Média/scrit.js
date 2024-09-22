@@ -17,16 +17,27 @@ function colocar() {
 }
 
 function fazer() {
+    let maior = Math.max(...valores)  //Coloque isto antes de qualquer coisa, vai por mim.
+    console.log(maior)
+
+    let menor = Math.min(...valores)
+    console.log(menor)
+
     console.log(valores.length)
     let texto = document.createElement('p')
-    texto.innerHTML = `Você digitou ${valores.length} números, o maior foi ${valores}`
+    texto.innerHTML = `Você digitou ${valores.length} números, o maior foi ${maior} e o menor foi ${menor}.`
     res.appendChild(texto)
-    for (contador = '' ; valores )
 
 }
 
 
 
+/* var aux = vetor.filter(function(elemento, i) {
+    if(vetor.indexOf(elemento) !== i) {
+        repeated.push(elemento)
+    }
+    return vetor.indexOf(elemento) == i;
+})*/
 
 
 /*let item = document.createElement('option')
