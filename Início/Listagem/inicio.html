@@ -16,15 +16,21 @@
     <article>
         <section class="geral">
             <div class="interno">
-                <p>O que eu preciso fazer hoje?</p>
+                <input type="text" id="acao" required placeholder="O que devo fazer?">
                 <button onclick="criar()" id="criado">+</button>
             </div>
             <hr class="linha">
-            <div class="lista">
-                <button onclick="realizado()" id="confirmado"></button>
-                <p>Aqui ficará uma lista</p>
-                <button onclick="excluir()" id="excluido">Excluir</button>
+
+
+            <div class="yes">
+                <div class="lista">
+                    <button onclick="realizado()" id="confirmado"></button>
+                    <p id="palavra"></p>
+                    <button onclick="excluir()" id="excluido">Excluir</button>
+                </div>
             </div>
+
+
         </section>
     </article>
     <script src="crair.js"></script>
