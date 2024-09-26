@@ -25,6 +25,7 @@ function fazer() {
 
     console.log(valores.length) 
     texto.innerHTML = `Você digitou ${valores.length} números, o maior foi ${maior} e o menor foi ${menor}.`
+    
     let texto = document.createElement('p') // pra baixo criação
     res.appendChild(texto)
 
