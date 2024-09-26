@@ -10,7 +10,6 @@ function criar() {
     clone.setAttribute('class', 'lista')
     document.body.querySelector('.yes').appendChild(clone) 
 
-    document.body.querySelector('.yes').appendChild(clone)
 
     let botao1 = document.createElement('button')
     botao1.setAttribute('id', 'confirmado')
