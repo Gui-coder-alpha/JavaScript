@@ -4,6 +4,8 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+
 body {
     background: linear-gradient(34deg, #94f0fa, #2dcfcf, #4f6472);
     background-repeat: no-repeat;
@@ -81,6 +83,22 @@ body {
 
 .lista > p {
     margin: auto auto auto 30px;
+    
+}
+
+.lista > p::after {
+    content: "";
+    display: block;
+    transition: 0.9s ease-in-out;
+    width: 0%;
+    height: 4px;
+    background-color: white;
+    margin: auto;
+    border-radius: 70px;
+}
+
+.lista > p:hover::after {
+    width: 100%;
 }
 
 #confirmado {
@@ -113,6 +131,18 @@ body {
     border: none;
     margin: auto 20px auto auto;
 }
+
+#excluido::after {
+    content: "X";
+    display: block;
+    font-size: 0px;
+    transition: 0.2s ease-in;
+}
+
+#excluido:hover::after {
+    font-size: 2em;
+}
+
 #excluido:hover {
     background-color: rgb(201, 88, 88);
     border: none;
